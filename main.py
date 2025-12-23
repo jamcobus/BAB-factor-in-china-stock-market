@@ -16,10 +16,10 @@ if __name__ == '__main__':
 
     # 读取数据
     # 股票收益率数据（假设包含股票代码、日期、收益率）
-    stock_returns = pd.read_csv("D:\\data_for_student\\PAPER\\TRD_Mnth.csv", parse_dates=["date"])
+    stock_returns = pd.read_csv("TRD_Mnth.csv", parse_dates=["date"])
 
     # FF5因子数据（假设包含日期、MKT、SMB、HML、RMW、CMA）
-    ff5_factors = pd.read_csv("D:\\data_for_student\\PAPER\\fivefactor_monthly1.csv", parse_dates=["date"])
+    ff5_factors = pd.read_csv("fivefactor_monthly1.csv", parse_dates=["date"])
 
 
     # 计算每只股票的Beta值（以过去12个月数据滚动计算）
@@ -228,7 +228,7 @@ if __name__ == '__main__':
     #####################波动率分时期分析###############################
 
     # 计算市场平均收益率（所有股票收益率的等权平均）
-    #market_returns = pd.read_csv("D:\\data_for_student\\PAPER\\TRD_Cnmont.csv", parse_dates=["Trdmnt"])
+    #market_returns = pd.read_csv("TRD_Cnmont.csv", parse_dates=["Trdmnt"])
     market_returns = stock_returns.groupby("date")["ret"].mean().reset_index()
     market_returns.columns = ["date", "market_return"]
 
