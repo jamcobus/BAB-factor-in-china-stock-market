@@ -11,6 +11,7 @@
 
 图3 展示了BAB策略的全部回报，在过去三十年里运行的BAB策略实现回报为负，这可以解释为观察期内的A股市场并没有发生温和的市场衰退，按照Xia Xu(2025)的解释，积极的市场会对BAB策略带来损失，由此可见A股市场在2015年以前是增长的。
  Xia Xu(2025) Market neutrality and beta crashes. Journal of Empirical Finance, 80,101577
+ 
  <img width="498" height="374" alt="image" src="https://github.com/user-attachments/assets/b1f8c02c-bf24-436b-b3a3-8373fdd50bec" />
 <img width="518" height="389" alt="image" src="https://github.com/user-attachments/assets/199c6fe7-c7f5-4f32-8a98-95d66eb376b4" />
 
@@ -18,3 +19,11 @@
 <img width="864" height="518" alt="image" src="https://github.com/user-attachments/assets/b29ed1f0-cda9-480d-b414-b607d5e0eefd" />
 
 图6 展示了Low-High波动率时期FF5因子模型各相关系数的比较，首先截距项α极小，分别为-0.0134和0.0021，且不显著。无论高低波动率时期，FF5模型都很好解释了BAB策略回报。
+
+最后结论：1）对因子投资的启示
+①动态配置建议：投资者可在低波动时期（如市场平稳期）超配BAB策略，利用其高夏普率特性；高波动时期则需结合尾部风险对冲工具。
+②因子组合优化：避免将BAB策略与SMB因子简单叠加，需考虑二者在市值维度上的风险重叠，建议引入流动性因子或行业中性化调整。
+（2）对风险管理的警示
+①小市值公司风险监控：小市值股票的高波动率与低市场相关性可能加剧组合尾部风险，需在风险模型中单独定价。
+②Beta稳定性评估，定期监测个股Beta的时变性（BAV），避免因市场波动突变导致策略损失。
+
